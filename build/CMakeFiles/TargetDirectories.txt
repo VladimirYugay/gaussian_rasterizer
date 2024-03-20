@@ -1,0 +1,3 @@
+/home/vy/projects/gaussian-rasterizer/build/CMakeFiles/rasterizer.dir
+/home/vy/projects/gaussian-rasterizer/build/CMakeFiles/edit_cache.dir
+/home/vy/projects/gaussian-rasterizer/build/CMakeFiles/rebuild_cache.dir

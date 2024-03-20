@@ -1,0 +1,6 @@
+# ninja log v5
+1	2935	1710940975171209838	/home/vy/projects/gaussian-rasterizer/build/temp.linux-x86_64-cpython-311/cuda_rasterizer/forward.o	51c6c2aabbb8e08f
+0	3012	1710940975247209837	/home/vy/projects/gaussian-rasterizer/build/temp.linux-x86_64-cpython-311/cuda_rasterizer/backward.o	60571de229afc4de
+1	10309	1710940982535209769	/home/vy/projects/gaussian-rasterizer/build/temp.linux-x86_64-cpython-311/cuda_rasterizer/rasterizer_impl.o	21e858ed0efc6f5c
+1	13168	1710940985395209742	/home/vy/projects/gaussian-rasterizer/build/temp.linux-x86_64-cpython-311/ext.o	2897014cd40dfe23
+2	35004	1710941007207209538	/home/vy/projects/gaussian-rasterizer/build/temp.linux-x86_64-cpython-311/rasterize_points.o	b71daa8c47f3ff2e

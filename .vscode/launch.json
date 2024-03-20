@@ -1,0 +1,33 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "CUDA C++: Test",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/test_build_torch/build/example-app"             
+        },
+        {
+            "name": "CUDA C++: Kernel",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/rasterizer"             
+        },        
+        {
+            "name": "CUDA C++: Attach",
+            "type": "cuda-gdb",
+            "request": "attach"
+        },
+        {
+            "name": "Convert dump",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/test_data/convert_dump.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },        
+    ]
+}
