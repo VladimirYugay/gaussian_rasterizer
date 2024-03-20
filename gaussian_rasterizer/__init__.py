@@ -96,7 +96,6 @@ class _RasterizeGaussians(torch.autograd.Function):
                 torch.save(cpu_args, "snapshot_fw.dump")
                 print("\nAn error occured in forward. Please forward snapshot_fw.dump for debugging.")
                 raise ex
-            torch.save(cpu_args, "/home/vy/projects/gaussian-rasterizer/snapshot_fw.dump")
         else:
             num_rendered, color, depth, alpha, radii, geomBuffer, binningBuffer, imgBuffer = _C.rasterize_gaussians(
                 *args)
@@ -149,7 +148,6 @@ class _RasterizeGaussians(torch.autograd.Function):
             try:
                 grad_means2D, grad_colors_precomp, grad_opacities, grad_means3D, grad_cov3Ds_precomp, grad_sh, grad_scales, grad_rotations = _C.rasterize_gaussians_backward(
                     *args)
-                torch.save(cpu_args, "/home/vy/projects/gaussian-rasterizer/snapshot_bw.dump")
             except Exception as ex:
                 torch.save(cpu_args, "snapshot_bw.dump")
                 print(
